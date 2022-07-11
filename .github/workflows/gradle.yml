@@ -1,3 +1,4 @@
+
 name: Java CI with Gradle
 
 on: [push, pull_request]
@@ -16,7 +17,8 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '11'
-        distribution: 'temurin' 
+        distribution: 'temurin'
+        
     - name: Run Jar File
       run: java -jar ./artifacts/app-card-delivery.jar &
     - name: Change wrapper permissions 
