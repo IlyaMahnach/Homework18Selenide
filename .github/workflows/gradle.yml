@@ -28,4 +28,4 @@ jobs:
       with:
         arguments: 
           build
-          gradlew test -Dselenide.headless=true
+          -Dselenide.headless=true
